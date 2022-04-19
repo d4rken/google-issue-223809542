@@ -5,8 +5,10 @@ import android.util.Log
 import android.view.accessibility.AccessibilityEvent
 
 class ACSService : AccessibilityService() {
+
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {
         Log.i("ACSService", "event=$event")
+        Log.i("ACSService", "rootInActiveWindow=$rootInActiveWindow")
     }
 
     override fun onInterrupt() {
